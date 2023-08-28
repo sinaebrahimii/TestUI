@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="text-text text-5xl text-center font-black">
           Let's Explore!
         </h1>
-        <h2 className="mt-5 mb-5 text-center text-primary-600 text-2xl font-bold">
+        <h2 className="mt-5 mb-5 px-2 text-center text-primary-600 text-2xl font-bold">
           Ready to trade city lights for starry nights?<br></br> Join us and
           discover what's your wildest camping adventure dream
         </h2>
