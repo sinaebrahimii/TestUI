@@ -1,6 +1,8 @@
 import "./globals.css";
+
 import { Roboto } from "next/font/google";
 import Link from "next/link";
+import { FaBars } from "react-icons/fa";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -15,32 +17,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={
-          roboto.className +
-          " h-full bg-zinc-900 flex-col items-center justify-center container m-auto"
-        }
-      >
-        <div className="flex justify-start items-center">
-          <ul className=" flex gap-3 justify-center flex-row">
-            <li>
+      <body className={roboto.className + "container m-auto"}>
+        <nav className="container mx-auto flex justify-between items-baseline my-5">
+          <h3 className=" text-text font-bold text-2xl ml-2">NATOURS</h3>
+          <ul className="flex items-baseline gap-3 px-2">
+            <li className=" text-text text-lg font-bold md:text-base hidden md:inline cursor-pointer">
+              About
+            </li>
+            <li className=" text-text text-lg font-bold md:text-base hidden md:inline cursor-pointer ">
+              Tours
+            </li>
+            <li className=" text-text text-lg font-bold md:text-base hidden md:inline cursor-pointer">
+              About
+            </li>
+            <li className=" text-text text-lg font-bold md:text-base hidden md:inline cursor-pointer">
               <Link
-                href={"/"}
-                className=" text-white text-lg hover:text-slate-200"
+                href={"/signin"}
+                className=" bg-primary-500 p-3 px-4 rounded hover:bg-primary-400 transition-all ease-in-out "
               >
-                Form
+                Sign In
               </Link>
             </li>
-            <li>
-              <Link
-                href={"/stats"}
-                className=" text-white text-lg hover:text-slate-200"
-              >
-                Stats
-              </Link>
+            <li className=" text-text text-lg font-bold md:text-base md:hidden cursor-pointer">
+              <FaBars />
             </li>
           </ul>
-        </div>
+        </nav>
         {children}
       </body>
     </html>
