@@ -20,7 +20,12 @@ const Hero = () => {
         </Link>
       </div>
       <div className="flex justify-center ">
-        <Image src={"/camp.webp"} width={500} height={500}></Image>
+        <Image
+          src={"/camp.webp"}
+          width={500}
+          height={500}
+          alt="Camper drawing"
+        ></Image>
       </div>
     </main>
   );
