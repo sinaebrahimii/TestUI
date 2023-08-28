@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
             <li className=" text-text text-lg font-bold md:text-base hidden md:inline cursor-pointer">
               About
             </li>
-            <li className=" text-text text-lg font-bold md:text-base hidden md:inline cursor-pointer">
+            <li className=" text-text text-lg font-bold md:text-base  cursor-pointer">
               <Link
                 href={"/signin"}
                 className=" bg-primary-500 p-3 px-4 rounded hover:bg-primary-400 transition-all ease-in-out "
